@@ -4,7 +4,7 @@ Projeyi kullanabilmek için documentPath ve newDocumentPath uygun şekilde tanı
 
 Tanımlanan değişkenler örnek garanti belgesi için geçerlidir. Başka belgeler için tanımlamalar değiştirilmelidir.
 
-File.Copy(documentPath, newDocumentPath, true);
+	File.Copy(documentPath, newDocumentPath, true);
 
 			using (WordprocessingDocument document = WordprocessingDocument.Open(newDocumentPath, true))
 			{
@@ -30,4 +30,4 @@ File.Copy(documentPath, newDocumentPath, true);
 			}
 
 
-Verilen kısım kodun asıl çalıştığı kısımdır.
+Verilen kısım kodun asıl çalıştığı kısımdır. Her bir değişken için tekrar tekrar yazılması gereken bu kısım bir döngü ve iki dizi ile bir kez yazılarak çalıştırılabilir.
