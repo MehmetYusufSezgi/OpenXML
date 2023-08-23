@@ -22,8 +22,11 @@ namespace OpenXMLWarranty
 
 		private void buttonWrite_Click(object sender, EventArgs e)
 		{
+			//Template olarak kullanılacak belgenin tanımlanması
 			string documentPath = @"C:\Users\msezg\OneDrive\Masaüstü\GarantiBelgesiOrnegi.docx";
 
+
+			//Textboxların değişkenlere atanması
 			string supplierTitle = textBoxSupplierTitle.Text;
 			string supplierAddress = textBoxSupplierAddress.Text;
 			string supplierPhoneNumber = textBoxSupplierPhoneNumber.Text;
@@ -49,6 +52,8 @@ namespace OpenXMLWarranty
 			string repairTime = textBoxProductRepairTime.Text;
 			string bandeloreNSerialNo = textBox.Text;
 
+
+			//Word belgesinde yer alan bookmarkların dizilerde kullanılabilmesi için değişkenlere atanması
 			string bookmarkSupplierTitle = "bookmarkSupplierTitle";
 			string bookmarkSupplierAddress = "bookmarkSupplierAddress";
 			string bookmarkSupplierPhone = "bookmarkSupplierPhone";
@@ -74,6 +79,7 @@ namespace OpenXMLWarranty
 			string bookmarkProductRepairDate = "bookmarkProductRepairDate";
 			string bookmarkBandoloreNSerialNo = "bookmarkProductBandoloreNSerialNo";
 
+			//Dizilerin tanımlanması
 			string[] bookmarks = new string[]
 			{
 				bookmarkSupplierTitle,
@@ -126,16 +132,19 @@ namespace OpenXMLWarranty
 				bandeloreNSerialNo
 			};
 
-
+			//Template üzerinden oluşturulacak belge
 			string newDocumentPath = @"C:\Users\msezg\OneDrive\Masaüstü\NewGarantiBelgesi.docx";
 			File.Copy(documentPath, newDocumentPath, true);
 
 			using (WordprocessingDocument document = WordprocessingDocument.Open(newDocumentPath, true))
 			{
+				//Değişken sayısı kadar tekrar
 				for (int i = 0; i < areasInWord.Length; i++)
 				{
+					//Word belgesinden bookmarkların aranması
 					BookmarkStart bookmark = document.MainDocumentPart.Document.Body.Descendants<BookmarkStart>()
 												  .FirstOrDefault(b => b.Name == bookmarks[i]);
+					//Bookmarkın kontrolü
 					if (bookmark != null)
 					{
 						Run run = bookmark.NextSibling<Run>();
@@ -144,12 +153,13 @@ namespace OpenXMLWarranty
 							Text text = run.GetFirstChild<Text>();
 							if (text != null)
 							{
+								//Formdan alınan değerin bookmarkın temsil ettiği alana yazılması
 								text.Text = areasInWord[i];
 							}
 						}
 					}
 				}
-
+				//Dokümanın kaydedilmesi
 				document.Save();
 			}
 
