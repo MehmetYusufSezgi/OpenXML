@@ -1,0 +1,14 @@
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\bin\Debug\OpenXMLWarranty.exe.config
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\bin\Debug\OpenXMLWarranty.exe
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\bin\Debug\OpenXMLWarranty.pdb
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.csproj.AssemblyReference.cache
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.csproj.SuggestedBindingRedirects.cache
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.Form1.resources
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.Properties.Resources.resources
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.csproj.GenerateResource.cache
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.csproj.CoreCompileInputs.cache
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.csproj.CopyComplete
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.exe
+C:\Users\msezg\OneDrive\Masaüstü\C#\OpenXMLWarranty\OpenXMLWarranty\obj\Debug\OpenXMLWarranty.pdb
