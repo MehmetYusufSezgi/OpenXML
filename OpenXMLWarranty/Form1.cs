@@ -54,8 +54,8 @@ namespace OpenXMLWarranty
             string bandeloreNSerialNo = textBox.Text;
 
 
-            //Word belgesinde yer alan bookmarkların dizilerde kullanılabilmesi için değişkenlere atanması
-            //Bu atamalardan önce Word belgesine bookmarkların koyulması gerekli
+            //Word belgesinde yer alan yer işaretlerinin dizilerde kullanılabilmesi için değişkenlere atanması
+            //Bu atamalardan önce Word belgesine yer işareterlinin koyulması gerekli
             string bookmarkSupplierTitle = "bookmarkSupplierTitle";
             string bookmarkSupplierAddress = "bookmarkSupplierAddress";
             string bookmarkSupplierPhone = "bookmarkSupplierPhone";
@@ -143,10 +143,11 @@ namespace OpenXMLWarranty
                 //Değişken sayısı kadar tekrar
                 for (int i = 0; i < areasInWord.Length; i++)
                 {
-                    //Word belgesinden bookmarkların aranması
+                    //Word belgesinden yer işaretlerinin aranması
+                    //Bookmark kelimesi yer işareti anlamında kullanıldı
                     BookmarkStart bookmark = document.MainDocumentPart.Document.Body.Descendants<BookmarkStart>()
                                                   .FirstOrDefault(b => b.Name == bookmarks[i]);
-                    //Bookmarkın kontrolü
+                    //Yer işaretinin kontrolü
                     if (bookmark != null)
                     {
                         Run run = bookmark.NextSibling<Run>();
@@ -155,7 +156,7 @@ namespace OpenXMLWarranty
                             Text text = run.GetFirstChild<Text>();
                             if (text != null)
                             {
-                                //Formdan alınan değerin bookmarkın temsil ettiği alana yazılması
+                                //Formdan alınan değerin yer işaretinin temsil ettiği alana yazılması
                                 text.Text = areasInWord[i];
                             }
                         }
