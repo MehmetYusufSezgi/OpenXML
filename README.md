@@ -1,7 +1,6 @@
 # OpenXML
-
-
 (Kod OpenXMLWarranty => Form1.cs içinde)
+
 Öncelikle taslak word belgesinde doldurulması gerek alanların önüne Ekle => Yer İşareti sekmesine gelip uygun alanlara isimlendirmelere dikkat edilere yer işaretleri konulmalıdır.
 Her alan için farklı isimde yer işareti konulmalıdır.
 
