@@ -1,9 +1,10 @@
 # OpenXML
 
-Öncelikle taslak word belgesinde doldurulması gerek alanların önüne Ekle => Yer İşareti sekmesine gelip uygun alanlara isimlendirmelere dikkat edilere yer işaretleri konulmalıdır
-Her alan için farklı isimde yer işareti konulmalıdır
+Öncelikle taslak word belgesinde doldurulması gerek alanların önüne Ekle => Yer İşareti sekmesine gelip uygun alanlara isimlendirmelere dikkat edilere yer işaretleri konulmalıdır.
+Her alan için farklı isimde yer işareti konulmalıdır.
 
 Projeyi kullanabilmek için documentPath ve newDocumentPath uygun şekilde tanımlanmalıdır.
+Aynı zamanda DocumentFormat.OpenXML nuget paketi gereklidir.
 
 Tanımlanan değişkenler örnek garanti belgesi için geçerlidir. Başka belgeler için tanımlamalar değiştirilmelidir.
 
