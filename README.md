@@ -35,4 +35,4 @@ Tanımlanan değişkenler örnek garanti belgesi için geçerlidir. Başka belge
 			}
 
 
-Verilen kısım kodun asıl çalıştığı kısımdır. Her bir değişken için tekrar tekrar yazılması gereken bu kısım bir döngü ve iki dizi ile bir kez yazılarak çalıştırılabilir.
+Verilen kısım kodun asıl çalıştığı kısımdır. Her bir değişken/yer işareti için tekrar tekrar yazılması gereken bu kısım bir döngü ve iki dizi ile bir kez yazılarak çalıştırılabilir.
